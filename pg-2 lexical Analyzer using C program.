@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <ctype.h>
+int is_letter(char c) {
+    return isalpha(c) || c == '_';
+}
+int is_digit(char c) {
+    return isdigit(c);
+}
+int is_operator(char c) {
+    return c == '+' || c == '-' || c == '*' || c == '/' || c == '%';
+}
+
+int main() {
+    char input[100]; 
+    int i = 0; 
+    char c; 
+    printf("Enter input: ");
+    fgets(input, 100, stdin);
+
+    while (input[i] != '\0') {
+        c = input[i];
+        if (is_letter(c)) {
+            printf("Identifier: ");
+            while (is_letter(c) || is_digit(c)) {
+                printf("%c", c);
+                c = input[++i];
+            }
+
+            printf("\n");
+            continue;
+        }
+        if (is_digit(c)) {
+            printf("Constant: ");
+            while (is_digit(c)) {
+                printf("%c", c);
+                c = input[++i];
+            }
+
+            printf("\n");
+            continue;
+        }
+        if (is_operator(c)) {
+            printf("Operator: %c\n", c);
+        }
+
+        i++;
+    }
+
+    return 0;
+}
