@@ -1,0 +1,228 @@
+Exp. No. 21                          
+Write a LEX specification file to take input C program from a .c file and count tthe number of characters, number of lines & number of words.
+
+      Input Source Program: (sample.c)
+
+ #include <stdio.h>
+int main() 
+{    
+int number1, number2, sum;
+
+ printf("Enter two integers: ");
+
+ scanf("%d %d", &number1, &number2);
+
+ sum = number1 + number2;      
+
+      printf("%d + %d = %d", number1, number2, sum);
+
+  return 0;
+
+ }
+
+Exp. No. 22                          
+
+Write a LEX program to print all the constants in the given C source program file.
+
+Input Source Program: (sample.c)
+
+#define P 314  
+
+#include<stdio.h> #include<conio.h>
+
+ void main()
+
+{
+
+            int a,b,c = 30;
+
+printf("hello");
+
+}
+
+Exp. No. 23                          
+
+Write a LEX program to count the number of Macros defined and header files    included in the C program.
+
+  Input Source Program: (sample.c)
+
+#define PI 3.14   
+
+#include<stdio.h> 
+
+#include<conio.h>
+
+ void main()
+
+{
+
+int a,b,c = 30;
+
+printf("hello");
+
+}
+
+Exp. No. 24                          
+
+ Write a LEX program to print all HTML tags in the input file.
+
+Input Source Program: (sample.html)
+
+<html>
+
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+</body>
+
+</html>
+
+Exp. No. 25                          
+
+Write a LEX program which adds line numbers to the given C program file and display the same in the standard output.
+
+Input Source Program: (sample.c)
+
+#define PI 3.14   
+
+#include<stdio.h> 
+
+#include<conio.h>
+
+   void main()
+
+{
+
+int a,b,c = 30;
+
+printf("hello");
+
+}
+
+Exp. No. 26                          
+
+Write a LEX program to count the number of comment lines in a given C program and eliminate them and write into another file.
+
+Input Source File: (input.c)
+
+#include<stdio.h> 
+
+int main()
+
+{
+
+int a,b,c; /*varible declaration*/ printf(“enter two numbers”); scanf(“%d %d”,&a,&b); c=a+b;//adding two numbers printf(“sum is %d”,c);
+
+return 0;
+
+}
+
+
+
+
+
+Output File: (output.c)
+
+include<stdio.h>
+
+int main()
+
+{
+
+int a,b,c; 
+
+printf(“enter two numbers”);
+
+scanf(“%d %d”,&a,&b);
+
+c=a+b;
+
+printf(“sum is %d”,c);
+
+return 0;
+
+}
+
+Exp. No. 27                          
+
+Write a LEX program to identify the capital words from the given input.
+
+Exp. No. 28                          
+
+Write a LEX Program to check the email address is valid or not.
+
+Exp. No. 29                          
+
+Write a LEX Program to convert the substring abc to ABC from the given input string 
+
+Exp. No. 30                          
+
+Implement a LEX program to check whether the mobile number is valid or not.
+
+Exp. No. 31                      
+
+Implement Lexical Analyzer using FLEX (Fast Lexical Analyzer).  The program should separate the tokens in the given C program and display with appropriate caption.
+
+Input Source Program: (sample.c)
+
+#include<stdio.h> 
+
+void main()
+
+{
+
+int a,b,c = 30; 
+
+printf("hello");
+
+}
+
+Exp. No. 32                          
+
+Write a LEX program to count the number of vowels in the given sentence.
+
+Exp. No. 33                          
+
+Write a LEX program to count the number of vowels in the given sentence.
+
+(Refer the program and output of experiment 32, both are same)
+
+Exp. No. 34                          
+
+Write a LEX program to separate the keywords and identifiers.  
+
+(Refer the program and output of experiment 31, both are same)
+
+Exp. No. 35                          
+
+Write a LEX program to recognise numbers and words in a statement. 
+
+Exp. No. 36                          
+
+Write a LEX program to identify and count positive and negative numbers.
+
+Exp. No. 37                          
+
+Write a LEX program to validate the URL.
+
+Exp. No. 38                          
+
+Write a LEX program to validate DOB of students.
+
+Exp. No. 39                          
+
+Write a LEX program to check whether the given input is digit or not.
+
+Exp. No. 40                          
+
+Write a LEX program to implement basic mathematical operations.
+
+
+
+
+
+
+
